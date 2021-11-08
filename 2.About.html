@@ -18,7 +18,7 @@
     
     <style>
       body {
-            height: 1000px;
+            height: 100%;
             background-image: url(/img/4cc0gu.png);
             background-repeat: repeat;
             background-attachment: fixed;
@@ -30,19 +30,68 @@
             width: 200px;
         }
 
+        /* 認識我們 */
+        .about{
+          height:calc(100vh - 105px);
+          display: flex;
+          align-items:center;
+          color: rgb(48, 48, 48);
+        }
 
-        .footerEnd{
-            background-color: rgba(27,38,55,.8);
-            height: 50px;
+        .aboutTitle{
+          font-family: 'Noto Serif TC', serif;    
+          display: flex;
+          align-items:flex-end; 
+          border-bottom: 1px solid rgb(48, 48, 48);
+          margin-bottom: 40px;
         }
         
-        .footerEnd_text{
+        .aboutTitle_2{
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .about img{
+          width: 500px;
+        }
+
+        .aboutText_1{
+          font-family: 'Noto Serif TC', serif;
+          font-size: 21px;
+          font-weight: 900;
+          margin-top: 5px;
+          margin-bottom: 30px;
+        }
+
+        .aboutText_2{
+          font-size: 18px;
+          color: rgb(100, 52, 52);
+          font-weight: 900;
+        }
+
+        .aboutText_3{
+          font-size: 16px;
+          line-height: 2;
+          margin-bottom: 30px;
+        }
+
+        .aboutText_4{
+          font-size: 20px;
+          color: rgba(27,38,55,.8);
+          font-weight: 900;
+          font-family: 'Noto Serif TC', serif; 
+          text-decoration: underline;
+        }
+
+        /* footer start */
+        .footer{
+            background-color: rgba(27,38,55,.8);
+            height: 45px;
             color: rgb(233, 233, 233);
             text-align:center;
-            line-height: 5px;
+            line-height:5px;
             font-size: 12px;
-            margin-top: 12px;
-        }       
+        }
 
     </style>
 </head>
@@ -87,20 +136,56 @@
         </nav>
     </header>
 
-    <p style="height: 700px;">認識我們</p>
-
-    <div class="container-fluid footerEnd">
+    <div class="container about">
       <div class="row">
-          <div class="col-lg-12 col-12 footerEnd_text">
-              <div>
-                  <p>• 地址：234014 新北市永和區自由街55號9樓&nbsp;• 電話：02-2922-0027&nbsp;•傳真 : 02-2928-9448&nbsp;• 服務時間：週一至週五 09:00-12:00  13:00-17:30</p>
+        <div class="col-lg-6 col-12 aboutTitle">
+          <div>
+            <h1>認識我們</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 aboutTitle aboutTitle_2">
+          <div>
+            <h5>About us</h5>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div>
+            <img src="/img/gotdaflow-P8_RmeffU-w-unsplash.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div>
+            <p class="aboutText_1">
+              政府立案的合法公益團體<br />
+              以倡導善待動物、維護動物生命尊嚴為前提執行各項計畫<br />
+              增進動物福利與人類福扯和諧共存流浪動物
+            </p>
+            <p class="aboutText_2">
+              ：「謝謝你/妳愛我，在我這所剩無幾的生命裡。」
+            </p>
+            <p class="aboutText_3">
+              自2011到2020，貓狗成長數是人類的10倍之多。而現在，貓狗已經比小孩多了！園區超收高達573%，資源匱乏，棄養、虐待、非法買賣、惡劣繁殖...錯誤觀念更導致浪浪與人類、環境產生衝突，許多生命正在掙扎求助！
+            </p>    
+            <p class="aboutText_4">
+              提高公民水準，集結大家的力量，讓浪浪在愛裡老去。
+            </p>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row">
+          <div class="col-lg-12 col-12">
+              <div class="mt-2">
+                  <p>• 地址：234014 新北市永和區自由街55號9樓&nbsp;• 電話：02-2922-0027&nbsp;• 傳真 : 02-2928-9448&nbsp;• 服務時間：週一至週五 09:00-12:00  13:00-17:30</p>
               </div>
               <div>
                   <p>• 好好善待動物協會 版權所有 • 2021© 台內團字第1090053780號</p>
               </div>
           </div>
       </div>
-    </div>
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

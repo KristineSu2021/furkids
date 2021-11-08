@@ -17,9 +17,78 @@
         rel="stylesheet">
     
     <style>
+      body {
+            height: 100%;
+            background-image: url(/img/4cc0gu.png);
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
         /* hearder start */
         .logo img {
             width: 200px;
+        }
+
+        /* 認識我們 */
+        .about{
+          height:calc(100vh - 105px);
+          display: flex;
+          align-items:center;
+          color: rgb(48, 48, 48);
+        }
+
+        .aboutTitle{
+          font-family: 'Noto Serif TC', serif;    
+          display: flex;
+          align-items:flex-end; 
+          border-bottom: 1px solid rgb(48, 48, 48);
+          margin-bottom: 40px;
+        }
+        
+        .aboutTitle_2{
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .about img{
+          width: 500px;
+        }
+
+        .aboutText_1{
+          font-family: 'Noto Serif TC', serif;
+          font-size: 42px;
+          font-weight: 600;
+        }
+
+        .aboutText_2{
+          font-size: 16px;
+          color: rgb(100, 52, 52);
+          font-weight: 900;
+          margin-top: -20px;
+        }
+
+        .aboutText_3{
+          font-size: 16px;
+          line-height: 2;
+          margin-bottom: 30px;
+        }
+
+        .aboutText_4{
+          font-size: 20px;
+          color: rgba(27,38,55,.8);
+          font-weight: 900;
+          font-family: 'Noto Serif TC', serif;
+        }
+
+        /* footer start */
+        .footer{
+            background-color: rgba(27,38,55,.8);
+            height: 45px;
+            color: rgb(233, 233, 233);
+            text-align:center;
+            line-height:5px;
+            font-size: 12px;
         }
 
     </style>
@@ -65,7 +134,64 @@
         </nav>
     </header>
 
-    <p>幫助浪浪</p>
+    <div class="container about">
+      <div class="row">
+        <div class="col-lg-6 col-12 aboutTitle">
+          <div>
+            <h1>幫助浪浪</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 aboutTitle aboutTitle_2">
+          <div>
+            <h5>Help us</h5>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div>
+            <img src="/img/anusha-barwa-ppKcYi1CXcI-unsplash.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div>
+            <p class="aboutText_1">
+              如何捐款?
+            </p>
+            <p class="aboutText_2">
+              提供【線上捐款】、【郵政劃撥】、【ATM轉帳】
+            </p>
+            <p class="aboutText_3">
+              ※ 若使用ATM或銀行匯款等方式捐款需要開立收據者，請協助提供以下資料<br />
+              1.捐款者/收據抬頭姓名<br />
+              2.捐款日期<br />
+              3.捐款金額<br />
+              4.捐款明細照片或截圖<br />
+              5.收件地址<br />
+              並寄至: service@furkids.org.tw<br />
+              收到來信我們會盡速為您處理後續收據開立事宜，謝謝。
+            </p>    
+            <p class="aboutText_4">
+              戶名 社團法人好好善待動物協會<br />
+              郵政劃撥帳號 5044-5118<br />
+              ATM/銀行匯款帳號 013(國泰世華 永和分行)<br />
+              009-03-500764-1
+            </p>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row">
+          <div class="col-lg-12 col-12">
+              <div class="mt-2">
+                  <p>• 地址：234014 新北市永和區自由街55號9樓&nbsp;• 電話：02-2922-0027&nbsp;• 傳真 : 02-2928-9448&nbsp;• 服務時間：週一至週五 09:00-12:00  13:00-17:30</p>
+              </div>
+              <div>
+                  <p>• 好好善待動物協會 版權所有 • 2021© 台內團字第1090053780號</p>
+              </div>
+          </div>
+      </div>
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

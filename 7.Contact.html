@@ -16,13 +16,84 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
     
-    <style>
-        /* hearder start */
-        .logo img {
-            width: 200px;
-        }
-
-    </style>
+        <style>
+          body {
+                height: 100%;
+                background-image: url(/img/4cc0gu.png);
+                background-repeat: repeat;
+                background-attachment: fixed;
+                background-position: center;
+            }
+    
+            /* hearder start */
+            .logo img {
+                width: 200px;
+            }
+    
+            /* 聯絡我們 */
+            .banner img{
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              overflow: hidden;
+              margin-bottom: 30px;
+            }
+    
+            .contactTitle{
+              font-family: 'Noto Serif TC', serif;    
+              display: flex;
+              align-items:flex-end; 
+              border-bottom: 1px solid rgb(48, 48, 48);
+              margin-top: 50px;
+              margin-bottom: 40px;
+            }
+            
+            .contactTitle_2{
+              display: flex;
+              justify-content: flex-end;
+            }
+    
+            .contact img{
+              width: 500px;
+            }
+    
+            .contactText_1{
+              font-family: 'Noto Serif TC', serif;
+              font-size: 30px;
+              font-weight: 600;
+            }
+    
+            .contactText_2{
+              font-size: 16px;
+              color: rgba(27,38,55,.8);
+              font-weight: 900;
+              
+            }
+    
+            .contactText_3{
+              font-size: 16px;
+              line-height: 2;
+              margin-bottom: 30px;
+            }
+    
+            
+              input[type="text"],
+input[type="phone"]{
+  display:block;
+}
+            
+    
+            /* footer start */
+            .footer{
+                background-color: rgba(27,38,55,.8);
+                height: 45px;
+                color: rgb(233, 233, 233);
+                text-align:center;
+                line-height:5px;
+                font-size: 12px;
+            }
+    
+        </style>
 </head>
 <body>
     <header>
@@ -65,7 +136,76 @@
         </nav>
     </header>
 
-    <p>聯絡我們</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12 contactTitle">
+          <div>
+            <h1>聯絡我們</h1>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12 contactTitle contactTitle_2">
+          <div>
+            <h5>Contact us</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container banner">
+      <div class="row">
+        <div class="col-lg-12 col-12">
+          <img src="/img/evgen-bryl-5WPEDMgmQiw-unsplash.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container contact">
+      <div class="row">
+            <div class="col-lg-6 col-12">
+              <div>
+                <p class="contactText_1">
+                  聯絡我們／異業合作／活動邀請
+                </p>
+                <p class="contactText_2">
+                  歡迎任何形式的合作及物資捐贈<br />
+                  只要你想的到，好好都願意聽取及討論！
+                </p>
+                <p class="contactText_3">
+                  電話：02-2922-0027<br />
+                  信箱：service@furkids.org.tw<br />
+                  傳真 : 02-2928-9448<br />
+                  地址： 234014 新北市永和區自由街55號9樓<br />
+                  服務時間：<br />
+                  週一至週五（09:00-12:00．13:00-17:00）<br />
+                </p>    
+              </div>  
+        </div>
+
+        <div class="col-lg-6 col-12 contactQA">
+          <div>
+            <form action="#">
+              <label for="填入要對應的表單id">填要顯示的表單標題</label>
+              <input id="填入與上方label內一樣的id" type="text" name="">
+          </form>
+          </div>  
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <div class="container-fluid footer">
+      <div class="row">
+          <div class="col-lg-12 col-12">
+              <div class="mt-2">
+                  <p>• 地址：234014 新北市永和區自由街55號9樓&nbsp;• 電話：02-2922-0027&nbsp;• 傳真 : 02-2928-9448&nbsp;• 服務時間：週一至週五 09:00-12:00  13:00-17:30</p>
+              </div>
+              <div>
+                  <p>• 好好善待動物協會 版權所有 • 2021© 台內團字第1090053780號</p>
+              </div>
+          </div>
+      </div>
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
