@@ -36,7 +36,7 @@
               height: 200px;
               object-fit: cover;
               overflow: hidden;
-              margin-bottom: 30px;
+              margin-bottom: 20px;
             }
     
             .contactTitle{
@@ -44,8 +44,8 @@
               display: flex;
               align-items:flex-end; 
               border-bottom: 1px solid rgb(48, 48, 48);
-              margin-top: 50px;
-              margin-bottom: 40px;
+              margin-top: 30px;
+              margin-bottom: 20px;
             }
             
             .contactTitle_2{
@@ -64,23 +64,33 @@
             }
     
             .contactText_2{
-              font-size: 16px;
+              font-size: 18px;
               color: rgba(27,38,55,.8);
               font-weight: 900;
+              margin-bottom: 25px;
               
             }
     
             .contactText_3{
               font-size: 16px;
-              line-height: 2;
-              margin-bottom: 30px;
+              line-height: 2.5;
+            }
+
+            .contact{
+              height:calc(100vh - 432px);
             }
     
             
-              input[type="text"],
-input[type="phone"]{
-  display:block;
-}
+            input[type="text"],
+            input[type="phone"]{
+            display:block;
+            }
+            input{
+              width: 100%;
+            }
+            textarea{
+              width: 100%;
+            }
             
     
             /* footer start */
@@ -183,10 +193,23 @@ input[type="phone"]{
 
         <div class="col-lg-6 col-12 contactQA">
           <div>
-            <form action="#">
-              <label for="填入要對應的表單id">填要顯示的表單標題</label>
-              <input id="填入與上方label內一樣的id" type="text" name="">
-          </form>
+            <form action="#" class="mb-3">
+              <label for="name">您的姓名</label>
+              <input id="name" type="text" name="">
+            </form>
+            <form action="#" class="mb-3">
+              <label for="phone">連絡電話</label>
+              <input id="phone" type="text" name="">
+            </form>
+            <form action="#" class="mb-3">
+              <label for="email">電子郵件</label>
+              <input id="email" type="text" name="">
+            </form>
+            <form class="mb-2">
+              我想說：<br>
+              <textarea name="guessbook" rows=3 cols=20></textarea>
+            </form>
+            <button type="button" class="btn btn-dark">送出</button>
           </div>  
         </div>
         

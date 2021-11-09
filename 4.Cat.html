@@ -17,10 +17,121 @@
         rel="stylesheet">
     
     <style>
+       body {
+                height: 100%;
+                background-image: url(/img/4cc0gu.png);
+                background-repeat: repeat;
+                background-attachment: fixed;
+                background-position: center;
+                color: rgb(48, 48, 48);
+            }
+
+        .navbar {
+            transition: .5s;
+        }
+
+        .navbar.hide {
+            transform: translateY(-100px);
+        }
+
+        
+
         /* hearder start */
         .logo img {
             width: 200px;
         }
+
+        /* cat */
+        .catTitle{
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          margin-bottom: 50px;
+        }
+
+        .catTitle img{
+          height: 700px;
+          margin-left: 50px;
+        }
+
+        .catTitle_1{
+          font-family: 'Noto Serif TC', serif;
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: 200px;
+          color: rgb(100, 52, 52);
+          margin-bottom: -5px;
+        }
+
+        .catTitle_2{
+          font-family: 'Noto Serif TC', serif;
+          font-size: 42px;
+          font-weight: 600;
+          border-bottom: 1px solid rgb(48, 48, 48);
+        }
+
+        .catTitle_3{
+          font-weight: 400;
+          line-height: 2.5;
+          font-size: 18px;
+        }
+
+        .catQA_1 img{
+          width: 200px;
+          margin-top: 100px;
+        }
+
+        .catQA_T{
+          font-family: 'Noto Serif TC', serif;
+          font-size: 28px;
+          font-weight: 600;
+        }
+
+        .catQA_t{
+          font-weight: 400;
+          line-height: 2;
+          font-size: 16px;
+        }
+
+        .catQA_N{
+          font-family: 'Noto Serif TC', serif;
+          font-weight: 400;
+          font-size: 30px;
+          text-decoration: underline;
+        }
+
+        .catQA_s{
+          writing-mode: vertical-rl;
+          color: rgba(27,38,55,.8);
+        }
+
+        .catQA_2 img{
+          width: 200px;
+          margin-top: -100px;
+          margin-left: 250px;
+        }
+
+        .catQA_3{
+          margin-top: 100px;
+        }
+
+        .catQA_3 img{
+          width: 300px;
+          margin-top: -100px;
+        }
+
+        /* footer start */
+        .footer{
+                background-color: rgba(27,38,55,.8);
+                height: 45px;
+                color: rgb(233, 233, 233);
+                text-align:center;
+                line-height:5px;
+                font-size: 12px;
+                margin-top: 50px;
+            }
+
 
     </style>
 </head>
@@ -65,12 +176,146 @@
         </nav>
     </header>
 
-    <p>關於喵星人</p>
+    <div class="container catTitle">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div>
+            <p class="catTitle_1">【貓咪揭密】</p>
+            <p class="catTitle_2">關於貓咪的10個冷知識</p>
+            <p class="catTitle_3">
+              身為貓奴的你，在社群平台或是影音平台上只要看到貓咪的任何事都會停下來看，看看別人家貓咪的生活笑料或是可愛的模樣，總是能夠療癒你的身心靈。<br />
+              而貓咪的各種行為，更是許多人百思不得其解，但最後還是折服在他那水汪汪的大眼和令人融化的叫聲中。<br />
+              今天就來跟大家分享關於貓咪10個冷到不能再冷的冷知識，讓你更進一步的認識貓星人。
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div>
+            <img src="/img/1x/catPattern_11.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container catQA_1">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <p class="catQA_T">
+            貓咪可以發出100種聲音
+          </p>
+          <p  class="catQA_t">
+            相較於狗只能發出10種聲音，貓咪不管是呼嚕聲、喵喵叫、鼾聲等其實都不太一樣，<br />
+            像是針對想要的東西會發出不同叫聲，面對獵物時也會發出獨特聲音。
+          </p>
+        </div>
+        <div class="col-lg-4 col-12">
+          <p class="catQA_N">
+            01
+          </p>
+          <p  class="catQA_s">meow meow</p>
+          <div>
+            <img src="/img/1x/catPattern_12.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container catQA_2">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div>
+            <img src="/img/1x/catPattern_7.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <p class="catQA_T">
+            貓咪可以明確辨別飼（貓）主（奴）的聲音
+          </p>
+          <p  class="catQA_t">
+            縱使牠們不會像狗一樣對飼主的呼喚有熱情反應，但要牠們分辨飼主聲音完全沒問題，就算十個人同時呼喊貓咪也能準確分辨貓奴在哪，但因為演化的關係讓牠們崇尚自由精神，所以就算知道貓奴在喊牠也不一定會理就是了。<br />
+          </p>
+          <span class="catQA_N">
+            02
+          </span>
+          <span  class="catQA_s" style="writing-mode: horizontal-tb;">&emsp;
+            我的奴才回來啦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container catQA_3">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <span class="catQA_N">
+            03
+          </span>
+          <span  class="catQA_s" style="writing-mode: horizontal-tb;">&emsp;
+            我都聽得很清楚唷</span>
+          <p class="catQA_T" style="margin-left: 60px;margin-top: 20px;">
+            貓咪的聽力比人類和狗還靈敏
+          </p>
+          <p  class="catQA_t" style="margin-left: 60px;">
+            人類可以聽到20 Hz至20 kHz的頻率，狗則是40 Hz，<br />
+            但貓可以聽到高達64 kHz的頻率。
+          </p>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div>
+            <img src="/img/1x/catPattern_8.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid footer">
+      <div class="row">
+          <div class="col-lg-12 col-12">
+              <div class="mt-2">
+                  <p>• 地址：234014 新北市永和區自由街55號9樓&nbsp;• 電話：02-2922-0027&nbsp;• 傳真 : 02-2928-9448&nbsp;• 服務時間：週一至週五 09:00-12:00  13:00-17:30</p>
+              </div>
+              <div>
+                  <p>• 好好善待動物協會 版權所有 • 2021© 台內團字第1090053780號</p>
+              </div>
+          </div>
+      </div>
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <script>
+        let lastScroll = 0;
+
+        $(window).scroll(function () {
+
+            const nowScroll = $(this).scrollTop();
+            console.log('nowScroll:',nowScroll);
+            console.log('lastScroll:',lastScroll);
+            // 1.lastScroll = nowScroll;
+            if (nowScroll > lastScroll) {
+                // 代表我往下走，選單要 Hide
+                // 2.lastScroll = nowScroll;
+                $('.navbar').addClass('hide');
+            }
+            else {
+                // 代表我往上走，選單要 SHOW
+                // 3.lastScroll = nowScroll;
+                $('.navbar').removeClass('hide');
+            }
+
+            // 4.
+            lastScroll = nowScroll;
+        })
+
+            // 5.lastScroll = nowScroll;
+    </script>
 
 </body>
 </html>
